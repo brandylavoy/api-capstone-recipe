@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Recipe Search</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Recipe Search</h1>
+    </header>
+
+    <section class="user-input">
+
+
+        <input id="ingredient" type="text" placeholder="Enter search term here...">
+        <select name="diet" id="dietName">
+            <option disabled selected value="choose dietary restriction">Please choose a Dietary Restriction</option>
+            <option value="vegan">Vegan</option>
+            <option value="vegetarian">Vegetarian</option>
+        </select>
+        <select name="allergy" id="allergyName">
+            <option disabled selected value="choose allergy">Please choose a Food Allergy</option>
+            <option value="gluten">Gluten</option>
+            <option value="dairy">Dairy</option>
+        </select>
+        <button id="searchButton" class="search">Search</button>
+
+    </section>
+    <section class="display-results">
+        <ul class="recipe-details">
+            <li>
+                <div class="recipe-image">
+                    <img src="vegan-pho.jpg" alt="Recipe image" width="170">
+                </div>
+                <div class="recipe-description">
+                    <p><a target="_blank" href=http://www.yummly.co/#recipe/Easy-Awesome-Vegan-Pho-1994996>Easy Awesome Vegan Pho</a></p>
+                    <p>I called this easy for a reason and that’s because it is! It’s super quick to make— with a little simmering and sauteing, you’ll be reaching for that squeeze of lime…and a delicious bowl of fragrant pho within minutes! </p>
+                    <p>Cooking time: 45 minutes</p>
+                    <p>Rating: No ratings</p>
+                </div>
+            </li>
+            <br>
+            <li>
+                <div class="recipe-image">
+                    <img src="vegan-pho.jpg" alt="Recipe image" width="170">
+                </div>
+                <div class="recipe-description">
+                    <p><a target="_blank" href=http://www.yummly.co/#recipe/Easy-Awesome-Vegan-Pho-1994996>Easy Awesome Vegan Pho</a></p>
+                    <p>I called this easy for a reason and that’s because it is! It’s super quick to make— with a little simmering and sauteing, you’ll be reaching for that squeeze of lime…and a delicious bowl of fragrant pho within minutes! </p>
+                    <p>Cooking time: 45 minutes</p>
+                    <p>Rating: No ratings</p>
+                </div>
+            </li>
+            <br>
+            <li>
+                <div class="recipe-image">
+                    <img src="vegan-pho.jpg" alt="Recipe image" width="170">
+                </div>
+                <div class="recipe-description">
+                    <p><a target="_blank" href=http://www.yummly.co/#recipe/Easy-Awesome-Vegan-Pho-1994996>Easy Awesome Vegan Pho</a></p>
+                    <p>I called this easy for a reason and that’s because it is! It’s super quick to make— with a little simmering and sauteing, you’ll be reaching for that squeeze of lime…and a delicious bowl of fragrant pho within minutes! </p>
+                    <p>Cooking time: 45 minutes</p>
+                    <p>Rating: No ratings</p>
+                </div>
+            </li>
+            <br>
+            <li>
+                <div class="recipe-image">
+                    <img src="vegan-pho.jpg" alt="Recipe image" width="170">
+                </div>
+                <div class="recipe-description">
+                    <p><a target="_blank" href=http://www.yummly.co/#recipe/Easy-Awesome-Vegan-Pho-1994996>Easy Awesome Vegan Pho</a></p>
+                    <p>I called this easy for a reason and that’s because it is! It’s super quick to make— with a little simmering and sauteing, you’ll be reaching for that squeeze of lime…and a delicious bowl of fragrant pho within minutes! </p>
+                    <p>Cooking time: 45 minutes</p>
+                    <p>Rating: No ratings</p>
+                </div>
+            </li>
+            <br>
+        </ul>
+
+    </section>
+    <footer></footer>
+    <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
