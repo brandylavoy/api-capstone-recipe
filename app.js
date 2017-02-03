@@ -19,7 +19,7 @@ $("#search-form").submit(function (event) {
 function getYummlySearchData(keyword, diet, allergy) {
     //var yummly_base_URL = "http://api.yummly.com/v1/api/recipes?_app_id=350000fd&_app_key=a7c7b74ce0a5f35e6e9fcca1e0f49325&q=" + keyword + "&allowedDiet[]=" + diet + "&allowedAllergy[]=" + allergy + "&requirePictures=true&maxResult=12";
 
-    var yummly_base_URL = "http://api.yummly.com/v1/api/recipes?_app_id=350000fd&_app_key=a7c7b74ce0a5f35e6e9fcca1e0f49325";
+    var yummly_base_URL = "https://api.yummly.com/v1/api/recipes?_app_id=350000fd&_app_key=a7c7b74ce0a5f35e6e9fcca1e0f49325";
 
     if (keyword != "") {
         yummly_base_URL += "&q=" + keyword;
