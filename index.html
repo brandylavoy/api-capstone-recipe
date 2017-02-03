@@ -14,72 +14,85 @@
 
     <section class="user-input">
 
+        <form id="search-form">
+            <input id="ingredient" type="text" placeholder=" Enter search term here..." value="">
+            <select name="diet" id="dietName">
+                <option value="choose" selected>Select a Dietary Restriction</option>
+                <option value="lacto-vegetarian">Lacto vegetarian</option>
+                <option value="ovo-vegetarian">Ovo vegetarian</option>
+                <option value="paleo">Paleo</option>
+                <option value="pescetarian">Pescetarian</option>
+                <option value="vegan">Vegan</option>
+                <option value="vegetarian">Vegetarian</option>
 
-        <input id="ingredient" type="text" placeholder="Enter search term here...">
-        <select name="diet" id="dietName">
-            <option disabled selected value="choose dietary restriction">Please choose a Dietary Restriction</option>
-            <option value="vegan">Vegan</option>
-            <option value="vegetarian">Vegetarian</option>
-        </select>
-        <select name="allergy" id="allergyName">
-            <option disabled selected value="choose allergy">Please choose a Food Allergy</option>
-            <option value="gluten">Gluten</option>
-            <option value="dairy">Dairy</option>
-        </select>
-        <button id="searchButton" class="search">Search</button>
+            </select>
+            <select name="allergy" id="allergyName">
+                <option value="choose" selected>Select a Food Allergy</option>
+                <option value="dairy-free">Dairy</option>
+                <option value="egg-free">Egg</option>
+                <option value="gluten-free">Gluten</option>
+                <option value="peanut-free">Peanut</option>
+                <option value="seafood-free">Seafood</option>
+                <option value="sesame-free">Sesame</option>
+                <option value="soy-free">Soy</option>
+                <option value="sulfite-free">Sulfite</option>
+                <option value="tree-nut-free">Tree nut</option>
+                <option value="wheat-free">Wheat</option>
+            </select>
+            <button id="searchButton" type="submit" class="search">Search</button>
+        </form>
 
     </section>
     <section class="display-results">
-        <ul class="recipe-details">
+
+        <!--<ul class="recipe-details">
+
             <li>
-                <div class="recipe-image">
-                    <img src="vegan-pho.jpg" alt="Recipe image" width="170">
-                </div>
-                <div class="recipe-description">
-                    <p><a target="_blank" href=http://www.yummly.co/#recipe/Easy-Awesome-Vegan-Pho-1994996>Easy Awesome Vegan Pho</a></p>
-                    <p>I called this easy for a reason and that’s because it is! It’s super quick to make— with a little simmering and sauteing, you’ll be reaching for that squeeze of lime…and a delicious bowl of fragrant pho within minutes! </p>
-                    <p>Cooking time: 45 minutes</p>
-                    <p>Rating: No ratings</p>
-                </div>
-            </li>
-            <br>
-            <li>
-                <div class="recipe-image">
-                    <img src="vegan-pho.jpg" alt="Recipe image" width="170">
-                </div>
-                <div class="recipe-description">
-                    <p><a target="_blank" href=http://www.yummly.co/#recipe/Easy-Awesome-Vegan-Pho-1994996>Easy Awesome Vegan Pho</a></p>
-                    <p>I called this easy for a reason and that’s because it is! It’s super quick to make— with a little simmering and sauteing, you’ll be reaching for that squeeze of lime…and a delicious bowl of fragrant pho within minutes! </p>
-                    <p>Cooking time: 45 minutes</p>
-                    <p>Rating: No ratings</p>
-                </div>
-            </li>
-            <br>
-            <li>
-                <div class="recipe-image">
-                    <img src="vegan-pho.jpg" alt="Recipe image" width="170">
-                </div>
-                <div class="recipe-description">
-                    <p><a target="_blank" href=http://www.yummly.co/#recipe/Easy-Awesome-Vegan-Pho-1994996>Easy Awesome Vegan Pho</a></p>
-                    <p>I called this easy for a reason and that’s because it is! It’s super quick to make— with a little simmering and sauteing, you’ll be reaching for that squeeze of lime…and a delicious bowl of fragrant pho within minutes! </p>
-                    <p>Cooking time: 45 minutes</p>
-                    <p>Rating: No ratings</p>
-                </div>
-            </li>
-            <br>
-            <li>
-                <div class="recipe-image">
-                    <img src="vegan-pho.jpg" alt="Recipe image" width="170">
-                </div>
-                <div class="recipe-description">
-                    <p><a target="_blank" href=http://www.yummly.co/#recipe/Easy-Awesome-Vegan-Pho-1994996>Easy Awesome Vegan Pho</a></p>
-                    <p>I called this easy for a reason and that’s because it is! It’s super quick to make— with a little simmering and sauteing, you’ll be reaching for that squeeze of lime…and a delicious bowl of fragrant pho within minutes! </p>
-                    <p>Cooking time: 45 minutes</p>
-                    <p>Rating: No ratings</p>
-                </div>
-            </li>
-            <br>
-        </ul>
+    <div class="recipe-image" style="background-image: url(vegan-pho.jpg);">
+
+    </div>
+    <div class="recipe-description">
+        <p><a target="_blank" href=http://www.yummly.co/#recipe/Easy-Awesome-Vegan-Pho-1994996>Easy Awesome Vegan Pho</a></p>
+        <p>I called this easy for a reason and that’s because it is! It’s super quick to make— with a little simmering and sauteing, you’ll be reaching for that squeeze of lime…and a delicious bowl of fragrant pho within minutes! </p>
+        <p>Cooking time: 45 minutes</p>
+        <p>Rating: No ratings</p>
+    </div>
+</li>
+<li>
+    <div class="recipe-image" style="background-image: url(vegan-pho.jpg);">
+
+    </div>
+    <div class="recipe-description">
+        <p><a target="_blank" href=http://www.yummly.co/#recipe/Easy-Awesome-Vegan-Pho-1994996>Easy Awesome Vegan Pho</a></p>
+        <p>I called this easy for a reason and that’s because it is! It’s super quick to make— with a little simmering and sauteing, you’ll be reaching for that squeeze of lime…and a delicious bowl of fragrant pho within minutes! </p>
+        <p>Cooking time: 45 minutes</p>
+        <p>Rating: No ratings</p>
+    </div>
+</li>
+<li>
+    <div class="recipe-image" style="background-image: url(vegan-pho.jpg);">
+
+    </div>
+    <div class="recipe-description">
+        <p><a target="_blank" href=http://www.yummly.co/#recipe/Easy-Awesome-Vegan-Pho-1994996>Easy Awesome Vegan Pho</a></p>
+        <p>I called this easy for a reason and that’s because it is! It’s super quick to make— with a little simmering and sauteing, you’ll be reaching for that squeeze of lime…and a delicious bowl of fragrant pho within minutes! </p>
+        <p>Cooking time: 45 minutes</p>
+        <p>Rating: No ratings</p>
+    </div>
+</li>
+<li>
+    <div class="recipe-image" style="background-image: url(vegan-pho.jpg);">
+
+    </div>
+    <div class="recipe-description">
+        <p><a target="_blank" href=http://www.yummly.co/#recipe/Easy-Awesome-Vegan-Pho-1994996>Easy Awesome Vegan Pho</a></p>
+        <p>I called this easy for a reason and that’s because it is! It’s super quick to make— with a little simmering and sauteing, you’ll be reaching for that squeeze of lime…and a delicious bowl of fragrant pho within minutes! </p>
+        <p>Cooking time: 45 minutes</p>
+        <p>Rating: No ratings</p>
+    </div>
+</li>
+
+</ul>-->
 
     </section>
     <footer></footer>

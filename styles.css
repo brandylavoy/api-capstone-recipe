@@ -1,72 +1,120 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    color: white;
-    border: 1px solid red;
-}
+    * {
+        padding: 0;
+        margin: 0;
+        color: coral;
+        font-weight: 800;
+        /*    border: 1px solid red;*/
+        box-sizing: border-box;
+    }
 
-html {
-    background: rgba(0, 0, 0, 0) url("background.jpg") no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
+    html {
+        background: rgba(0, 0, 0, 0) url("background.jpg") no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
 
-body header h1 {
-    margin: 10px auto;
-    width: 90%;
-    text-align: center;
-}
+    header h1 {
+        margin: 0.5rem auto;
+        width: 90%;
+        text-align: center;
+    }
 
-body .user-input {
-    margin: 10px auto;
-    width: 90%;
-    text-align: center;
-    height: 60px;
-}
+    section.user-input {
+        margin: 1rem auto;
+        width: 90%;
+        text-align: center;
+    }
 
-body section #ingredient {
-    width: 200px;
-    height: 30px;
-    border-radius: 5px;
-}
+    section.user-input input,
+    section.user-input select,
+    section.user-input button {
+        padding: 0.1rem;
+        border-radius: 5px;
+        color: darkslategrey;
+        height: 30px;
+        line-height: 30px;
+        margin-bottom: 1rem;
+    }
 
-body section #dietName {
-    width: 210px;
-    height: 30px;
-    color: darkslategrey;
-}
+    section.user-input #ingredient {
+        width: 200px;
+    }
 
-body section #allergyName {
-    width: 200px;
-    height: 30px;
-    color: black;
-}
+    section.user-input #dietName {
+        width: 210px;
+    }
 
-body section .search {
-    height: 30px;
-    width: 50px;
-    border-radius: 5px;
-    color: white;
-    background-color: coral;
-}
+    section.user-input #allergyName {
+        width: 200px;
+    }
 
-.display-results {
-    width: 95%;
-    margin: 0 auto;
-}
+    section.user-input .search {
+        /* width: 50px; */
+        color: white;
+        background-color: coral;
+        padding: 0px 1rem;
+        margin: 0 1rem;
+        line-height: 25px;
+        margin-bottom: 1rem;
+    }
 
-section .recipe-details {
-    display: inline-block;
-    width: 40%;
-}
+    section.display-results {
+        background-color: rgba(89, 81, 82, .8);
+        width: 100%;
+        margin: 0 auto;
+        display: inline-block;
+    }
 
-section ul li {
-    list-style: none;
-}
+    section.display-results ul {
+        display: block;
+        width: 80%;
+        padding: 5px;
+        margin: 0 auto;
+    }
 
-@media screen only and (min-width: 480px) {
-    width: 100%;
-}
+    section.display-results ul li {
+        list-style: none;
+        text-align: center;
+        display: inline-block;
+        border: 1px solid black;
+        margin: 1rem 1%;
+        width: 31%;
+        padding: 0.5rem;
+        border-radius: 5px;
+    }
+
+    section.display-results ul li .recipe-image {
+        height: 150px;
+        background-position: center center;
+        background-size: cover;
+        border-radius: 5px;
+        margin-bottom: 0.5rem;
+    }
+
+    section.display-results ul li .recipe-description {
+        opacity: 1;
+    }
+
+    section.display-results ul li .recipe-description h4 {
+        height: 60px;
+        overflow: hidden;
+    }
+
+    @media only screen and (max-width: 800px) {
+        section.display-results ul li {
+            width: 60%;
+            margin: 0.5rem auto;
+            display: block;
+        }
+        section.display-results ul li .recipe-image {
+            height: 200px;
+        }
+        section.user-input input,
+        section.user-input select {
+            width: 60% !important;
+            margin: 1rem auto;
+            display: block;
+        }
+    }
