@@ -71,7 +71,7 @@ function displayYummlySearchData(dataMatches) {
         buildTheHtmlOutput += '<div class="recipe-description">';
         buildTheHtmlOutput += '<h4><a target="_blank" href=https://www.yummly.com/recipe/' + dataMatchesValue.id + ' >' + dataMatchesValue.recipeName + '</a></h4>';
         buildTheHtmlOutput += '<p>Cooking time: ' + (dataMatchesValue.totalTimeInSeconds / 60) + ' minutes</p>';
-        buildTheHtmlOutput += '<p>Rating: ' + dataMatchesValue.rating + '*</p>';
+        buildTheHtmlOutput += '<p>Rating: ' + dataMatchesValue.rating + ' Stars</p>';
         buildTheHtmlOutput += '</div>';
         buildTheHtmlOutput += '</li>';
     });
