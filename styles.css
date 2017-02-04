@@ -114,14 +114,17 @@
         overflow: hidden;
     }
 
+/*
     footer.contact {
-        position: fixed;
-        margin-bottom: 1rem;
-        height: 30px;
-        width: 100%;
-        margin: 0 auto -470px;
-        text-align: center;
-    }
+     position: fixed;
+     margin-bottom: 1rem;
+     height: 30px;
+     width: 100%;
+     margin: 0 auto;
+     margin-top: 60%;
+     text-align: center;
+ }
+*/
 
     @media only screen and (max-width: 800px) {
         section.display-results ul li {
