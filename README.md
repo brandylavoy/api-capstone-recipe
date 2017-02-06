@@ -1,10 +1,9 @@
 # Recipe Search
 Thinkful (https://thinkful.com/) First Capstone Project - a responsive website site that pulls data from a third party API, https://developer.yummly.com/, to present search results in a useful way.
 
-![Screenshot Home](https://github.com/brandylavoy/api-capstone-recipe/blob/master/home.png)
-![Screenshot Search](https://github.com/brandylavoy/api-capstone-recipe/blob/master/search.png)
-![Screenshot Dropdown](https://github.com/brandylavoy/api-capstone-recipe/blob/master/dropdown.png)
-![Screenshot Results](https://github.com/brandylavoy/api-capstone-recipe/blob/master/results.png)
+![Screenshot Home](https://github.com/brandylavoy/api-capstone-recipe/blob/master/recipe search home.png)
+![Screenshot Results](https://github.com/brandylavoy/api-capstone-recipe/blob/master/recipe search results.png)
+
 
 ##Introduction
 Recipe Search gives users the ability to search and filter recipes sourced through the yummly.com API.
