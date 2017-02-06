@@ -17,7 +17,9 @@
     }
 
     .wrapper {
-        min-height: 100%;
+        min-height: 800px;
+        margin-bottom: 50px;
+        clear: both;
     }
 
     header h1 {
@@ -38,7 +40,8 @@
         padding: 0.5rem;
         border-radius: 5px;
         color: darkslategrey;
-        height: 30px;
+        /*        increased height to improve display on larger screens*/
+        height: 40px;
         line-height: 30px;
         margin-bottom: 1rem;
     }
@@ -114,18 +117,14 @@
         height: 60px;
         overflow: hidden;
     }
-    /*
     footer.contact {
-     position: fixed;
-     margin-bottom: 1rem;
-     height: 30px;
-     width: 100%;
-     margin: 0 auto;
-     margin-top: 60%;
-     text-align: center;
- }
-*/
-
+        position: fixed;
+        bottom: 5px;
+        height: 30px;
+        width: 100%;
+        margin: 10rem auto;
+        text-align: center;
+    }
     @media only screen and (max-width: 800px) {
         section.display-results ul li {
             width: 60%;
